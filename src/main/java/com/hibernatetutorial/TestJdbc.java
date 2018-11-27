@@ -5,8 +5,16 @@ import java.sql.DriverManager;
 
 public class TestJdbc
 {
+
 	public static void main(String[] args)
 	{
+		/*The mysql server should be running for this code to work
+		* The server can be started with the command 'sudo /etc/init.d/mysql start'
+		* There should exist a database schema of the name hb_student_tracker
+		* @user hbstudent
+		* @password hbstudent
+		*
+		* */
 		String jdbcUrl = "jdbc:mysql://localhost:3306/hb_student_tracker?useSSL=false";
 		String user = "hbstudent";
 		String pass = "hbstudent";
